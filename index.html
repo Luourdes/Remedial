@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina Web && APP</title>
+    <style>
+        /* Estilos para el encabezado */
+        #idEncabezadoIndex {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        /* Estilos para el menú */
+        @media only screen and (min-width: 600px) {
+            #idMenuIndex ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+        
+            #idMenuIndex ul li {
+                float: left;
+            }
+        
+            #idMenuIndex ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+        
+            #idMenuIndex ul li a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+        
+            #idMenuIndex ul li.right {
+                float: right;
+            }
+        }
+        
+        /* Estilos para el menú en pantallas pequeñas */
+        @media only screen and (max-width: 599px) {
+            #idMenuIndex ul {
+                display: flex;
+                flex-direction: column;
+                background-color: #333;
+                padding: 0;
+            }
+        
+            #idMenuIndex ul li {
+                text-align: center;
+                padding: 10px 0;
+            }
+        
+            #idMenuIndex ul li a {
+                display: block;
+                color: white;
+                text-decoration: none;
+            }
+        
+            #idMenuIndex ul li a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+        }
+        
+        /* Estilos para el contenido */
+        #idContenidoIndex {
+            padding: 20px;
+        }
+        
+        /* Estilos para el pie de página */
+        #idPieIndex {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos para hacer la sección del contenido responsiva */
+        @media only screen and (max-width: 600px) {
+            #idContenidoIndex {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="idContenedorIndex">
+        <header id="idEncabezadoIndex">
+            <h1>Mi Amor por Artick Monkeys</h1>
+        </header>
+        <nav id="idMenuIndex">
+            <ul class="topnav">
+                <li><a class="active" href="paginas/inicio.html" target="iframeContenido">Inicio</a></li>
+                <li><a href="paginas/ejemplo1.html" target="iframeContenido">Ejemplo 1</a></li>
+                <li><a href="paginas/listaVideos.html" target="iframeContenido">Lista videos</a></li>
+            </ul>
+        </nav>
+      
+        
+        <section  id="idContenidoIndex">
+            <iframe src="paginas/inicio.html " frameborder="0" name="iframeContenido" height="300px" width="100%" >
+            </iframe>
+        </section>
+    </div>
+       
+        <footer id="idPieIndex">
+            <p>Aqui va el pie de pagina</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

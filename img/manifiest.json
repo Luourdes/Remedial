@@ -1,0 +1,17 @@
+{
+    "name": "Mi PWA",
+    "short_name": "Mi PWA lulu",
+    "description": "Una descripción de mi PWA",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "/img/Arti.jpg",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
